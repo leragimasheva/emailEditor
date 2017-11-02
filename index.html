@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="emailsEditor">
+
+  <head>
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="emailsEditor.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  
+  <body ng-controller="MainController">
+    <div class="container">
+      <div class="header">Share <i>"</i>Board name<i>"</i> with others</div>
+      <emails-editor emails="emails"></emails-editor>
+    </div>
+    <div class="btn-group">
+      <button ng-click="addEmail()">Add email</button>
+      <button ng-click="countEmails()">Get emails count</button>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,7 @@
+<div class="editor">
+  <div class="choice" ng-class="{'err': !validateEmail(email)}" ng-repeat="email in $ctrl.emails track by $index">
+    {{email}}
+    <i class="material-icons" ng-click="removeEmail($index)">close</i>
+  </div>
+  <input type="text" placeholder="add more people..." ng-keypress="keypress($event)" ng-blur="blur($event)" ng-paste="paste($event)" ng-keydown="fixInputWidth($event)"/>
+</div>
